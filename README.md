@@ -7,4 +7,4 @@ mycat 假定在生产环境中均处于内网，因此不支持 mysql 8 客户�
 式，需要添加参数--default-auth=mysql_native_password，方可登录，访问宿主机的9066端口也是一样。
 
 mysql --default-auth=mysql_native_password -uroot -p123456 -P8066 -h127.0.0.1
-mysql --default-auth=mysql_native_password -uroot -p123456 -P9066 -h127.0.0.1 -e "show @@datasource" 
+    mysql --default-auth=mysql_native_password -uroot -p123456 -P9066 -h127.0.0.1 -e "show @@datasource" 
